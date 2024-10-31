@@ -295,7 +295,7 @@ export default function Page() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 lg:w-[70%] sm:w-[100%]">
+      <section className="py-20 px-4 w-[70%] sm:w-[100%]">
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/20 to-transparent" />
         <div className="container mx-auto w-full">
           <motion.h2 
@@ -314,7 +314,7 @@ export default function Page() {
 
       {/* Footer Section */}
       <footer className="py-10 px-4 w-full bg-green-900/10 border-t border-green-500/10">
-        <div className="container mx-auto text-center flex flex-col">
+        <div className="container mx-auto text-center">
           <motion.div 
             className="flex items-center justify-center gap-2 mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -336,8 +336,8 @@ export default function Page() {
                 <Link href="#" className="text-sm text-green-500 hover:text-green-400">{item}</Link>
               </motion.div>
             ))}
-            </div>
-            <p className="text-gray-500 text-xs">© 2024 Greenpips Inc. All rights reserved.</p>
+          <br /><p className="text-gray-500 text-xs">© 2024 Greenpips Inc. All rights reserved.</p>
+        </div>
         </div>
       </footer>
     </div>
