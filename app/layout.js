@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Greenpip",
+  title: "Greenpips Inc.",
   description: "Your Personal Trading Guide.",
 };
 

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-// import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card } from "@/components/ui/card";
 import { PlayCircle, CheckCircle, ArrowRight, BarChart2, DollarSign, TrendingUp, ChartCandlestick } from "lucide-react";
 import Link from "next/link";
@@ -97,8 +96,8 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center w-full m-0 p-0 text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-lg border-b border-green-500/10">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-md border-none bg-transparent">
+        <div className="container mx-auto px-12 h-16 flex items-center justify-between">
           <motion.div 
             className="flex items-center gap-2"
             initial={{ opacity: 0, x: -20 }}
@@ -108,7 +107,7 @@ export default function Page() {
           <Link href="/">
             <BarChart2 className="w-8 h-8 text-green-500" />
           </Link>
-            <span className="font-bold text-green-500">Greenpips</span>
+            <span className="font-bold text-green-500">Greenpips Inc.</span>
           </motion.div>
           <div className="hidden items-center gap-8">
             {['Home', 'Features', 'Pricing', 'About'].map((item, index) => (
@@ -128,10 +127,12 @@ export default function Page() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            {/* <Button variant="ghost" className="hidden md:inline-flex text-green-500 hover:text-green-400 hover:bg-green-500/10">Login</Button> */}
-            <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold">
+            <Button variant="ghost" className="hidden md:inline-flex text-white hover:text-green-400 hover:bg-green-500/10">              
               <Link href="/v2">Get Started</Link>
             </Button>
+            {/* <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold">
+              <Link href="/v2">Get Started</Link>
+            </Button> */}
           </motion.div>
         </div>
       </nav>
@@ -321,10 +322,10 @@ export default function Page() {
             transition={{ duration: 0.5 }}
           >
             <BarChart2 className="w-8 h-8 text-green-500" />
-            <span className="font-bold text-green-500">Greenpips</span>
+            <span className="font-bold text-green-500">Greenpips Inc.</span>
           </motion.div>
           <p className="text-gray-400 mb-4">Empowering traders with AI-driven insights and smarter decisions.</p>
-          <div className="flex justify-center gap-6 mb-4 md:flex-col">
+          <div className="flex justify-center gap-6 mb-4 sm:flex-col">
             {['Terms & Conditions', 'Privacy Policy', 'Careers', 'Contact Us', 'Sponsorship'].map((item, index) => (
               <motion.div
                 key={item}
@@ -336,7 +337,7 @@ export default function Page() {
               </motion.div>
             ))}
           </div>
-          <p className="text-gray-500 text-xs">© 2024 Greenpips. All rights reserved.</p>
+          <p className="text-gray-500 text-xs">© 2024 Greenpips Inc. All rights reserved.</p>
         </div>
       </footer>
     </div>
