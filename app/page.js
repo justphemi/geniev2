@@ -99,15 +99,15 @@ export default function Page() {
       <nav className="fixed top-0 w-full z-50 backdrop-blur-md border-none bg-transparent">
         <div className="container mx-auto px-4 w-full h-16 flex items-center justify-between">
           <motion.div 
-            className="flex items-center gap-2 pl-8"
+            className="flex items-center gap-2"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-          <Link href="/">
+          <Link href="/" className="flex gap-4 items-center">
             <BarChart2 className="w-8 h-8 text-green-500" />
+            <span className="font-bold text-2xl text-green-500">Greenpips Inc.</span>
           </Link>
-            <span className="font-bold text-green-500">Greenpips Inc.</span>
           </motion.div>
           <div className="hidden items-center gap-8">
             {['Home', 'Features', 'Pricing', 'About'].map((item, index) => (
@@ -127,7 +127,7 @@ export default function Page() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Button variant="ghost" className="hidden md:inline-flex pr-8 text-white hover:text-green-400 hover:bg-green-500/10">              
+            <Button variant="ghost" className="flex text-white hover:text-green-400 hover:bg-green-500/10">              
               <Link href="/v2">Get Started</Link>
             </Button>
             {/* <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold">
@@ -169,9 +169,10 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            {/* <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold text-lg px-8 py-6">
+            <Button className="bg-green-600 hover:bg-green-700 mt-6 text-[#efefef] font-bold text-lg px-8 py-6">
               Get Started
-            </Button> */}
+            </Button>
+           
           </motion.div>
         </div>
       </section>
@@ -295,7 +296,7 @@ export default function Page() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 w-[70%] sm:w-[100%]">
+      <section className="py-20 px-4 lg:w-[70%] md:w-[100%]">
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/20 to-transparent" />
         <div className="container mx-auto w-full">
           <motion.h2 
@@ -314,7 +315,7 @@ export default function Page() {
 
       {/* Footer Section */}
       <footer className="py-10 px-4 w-full bg-green-900/10 border-t border-green-500/10">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center flex flex-col items-center">
           <motion.div 
             className="flex items-center justify-center gap-2 mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -325,7 +326,7 @@ export default function Page() {
             <span className="font-bold text-green-500">Greenpips Inc.</span>
           </motion.div>
           <p className="text-gray-400 mb-4">Empowering traders with AI-driven insights for better decisions.</p>
-          <div className="flex lg:flex-row justify-center gap-6 mb-4 md:flex-col sm:flex-col">
+          <div className="flex flex-col lg:flex-row justify-center gap-6 mb-4">
             {["Terms & Conditions", "Privacy Policy", "Careers","Contact Us", "Sponsorship", "Partnerships"].map((item, index) => (
               <motion.div
                 key={item}
@@ -336,8 +337,8 @@ export default function Page() {
                 <Link href="#" className="text-sm text-green-500 hover:text-green-400">{item}</Link>
               </motion.div>
             ))}
-          <br /><p className="text-gray-500 text-xs">© 2024 Greenpips Inc. All rights reserved.</p>
         </div>
+          <p className="text-gray-500 text-xs">© 2024 Greenpips Inc. All rights reserved.</p>
         </div>
       </footer>
     </div>
