@@ -169,10 +169,10 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <Button className="bg-green-600 hover:bg-green-700 mt-6 text-[#efefef] font-bold text-lg px-8 py-6">
+            {/* <Button className="bg-green-600 hover:bg-green-700 mt-6 text-[#efefef] font-bold text-lg px-8 py-6">
               Get Started
             </Button>
-           
+            */}
           </motion.div>
         </div>
       </section>
