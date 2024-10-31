@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import Link from "next/link";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogFooter } from "@/components/ui/dialog"
-import { ChevronDown, Diamond, HelpCircle, LogOut, Menu, MessageSquare, Settings, X, Zap, Clock, CreditCard, User, ArrowUp } from "lucide-react"
+import { ChevronDown, Diamond, HelpCircle, LogOut, Menu, MessageSquare, Settings, X, Zap, Clock, CreditCard, User, ArrowUp, BarChart2 } from "lucide-react"
 
 // Simulated chat messages
 const initialMessages = [
@@ -96,8 +97,11 @@ export default function Dashboard() {
             <Menu size={18} />
           </button>
           <div className="flex items-center">
+            <Link href="/">
+              <BarChart2 className="w-8 h-8 text-green-500" />
+            </Link>
             {/* <div className="w-8 h-8 bg-green-500 rounded-full mr-2"></div> */}
-            <span className="font-bold text-md">Greenpip</span>
+            {/* <span className="font-bold text-md">Greenpip</span> */}
           </div>
         </div>
         <div className="flex items-center">
