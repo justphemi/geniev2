@@ -46,7 +46,7 @@ const Accordion = ({ faqs }) => {
   };
 
   return (
-    <div className="w-full max-w-[70%] mx-auto">
+    <div className="w-full max-w-[70%] md:w-[100%] mx-auto">
       {faqs.map((faq, index) => (
         <div key={faq.question} className="border-b">
           <button
@@ -324,7 +324,7 @@ export default function Page() {
             <span className="font-bold text-green-500">Greenpips</span>
           </motion.div>
           <p className="text-gray-400 mb-4">Empowering traders with AI-driven insights and smarter decisions.</p>
-          <div className="flex justify-center gap-6 mb-4">
+          <div className="flex justify-center gap-6 mb-4 md:flex-col">
             {['Terms & Conditions', 'Privacy Policy', 'Careers', 'Contact Us', 'Sponsorship'].map((item, index) => (
               <motion.div
                 key={item}
