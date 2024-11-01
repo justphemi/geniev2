@@ -127,7 +127,7 @@ export default function Page() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Button variant="ghost" className="flex text-white bg-green-500/10">              
+            <Button variant="ghost" className="flex text-white bg-green-500/10 hover:bg-green-500/10 hover:text-white">              
               <Link href="/v2">Get Started</Link>
             </Button>
             {/* <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold">
