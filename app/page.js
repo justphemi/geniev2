@@ -127,7 +127,7 @@ export default function Page() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Button variant="ghost" className="flex text-white hover:text-green-400 hover:bg-green-500/10">              
+            <Button variant="ghost" className="flex text-white bg-green-500/10">              
               <Link href="/v2">Get Started</Link>
             </Button>
             {/* <Button className="bg-green-600 hover:bg-green-700 text-[#efefef] font-bold">
@@ -169,10 +169,10 @@ export default function Page() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            {/* <Button className="bg-green-600 hover:bg-green-700 mt-6 text-[#efefef] font-bold text-lg px-8 py-6">
-              Get Started
+            <Button className=" bg-green-500/10 hover:bg-green-700/10 mt-6 text-[#efefef] font-bold text-lg px-8 py-6">
+              Start trading
             </Button>
-            */}
+           
           </motion.div>
         </div>
       </section>
